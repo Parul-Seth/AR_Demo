@@ -1,7 +1,19 @@
+<!DOCTYPE html>
 <html>
-<body>
+     <head>
+        
+        <title> AR Invitation </title>
+        <meta name="viewport" content="width=device-width,height=device-height">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+     
+        <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
 
-        <a-scene id="scene" arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui="enabled: false" ar-template >
+
+    
             
 <script>
 
@@ -46,8 +58,11 @@
       }
     });
 
-</script>
-           <a-marker id="marker2" type='pattern' url='timer-pattern-marker.patt'>
+  </script>
+</head>
+        <body>
+                   <a-scene id="scene" arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui="enabled: false" ar-template >
+                <a-marker id="marker2" type='pattern' url='timer-pattern-marker.patt'>
                 <!--<a-box position='0 0 0' material='color: red;'></a-box>-->
                 <!--<a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#invitation' controls></a-plane>-->
                 <!--<a-entity text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Fun Moments"></a-entity>-->
@@ -58,6 +73,7 @@
 
                 
             </a-marker>
+                 <a-entity camera></a-entity>
          </a-scene>
 
 
