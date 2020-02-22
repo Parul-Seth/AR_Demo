@@ -61,7 +61,15 @@
   </script>
 </head>
         <body>
-                   <a-scene id="scene" arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui="enabled: false" ar-template >
+                 <a-scene id="scene" arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui="enabled: false" ar-template >
+			 <a-assets>
+				 
+			      <img id="texture" src="texture.jpg">
+                         </a-assets>
+				 
+				 
+
+			
                 <a-marker id="marker2" type='pattern' url='timer-pattern-marker.patt'>
                 <!--<a-box position='0 0 0' material='color: red;'></a-box>-->
                 <!--<a-plane scale = "4 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#invitation' controls></a-plane>-->
